@@ -4,6 +4,7 @@ class AdvanceViewController: UIViewController {
     @IBOutlet weak var shapeSegmented: UISegmentedControl!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var heartLabel: UILabel!
+    @IBOutlet weak var slider: UISlider!
     
     var content = ""
     
@@ -16,6 +17,10 @@ class AdvanceViewController: UIViewController {
         content = ""
         heartLabel.text = "💜"
         valueLabel.text = "1"
+    }
+    @IBAction func selectSegmented(_ sender: UISegmentedControl) {
+        set()
+        changeSlider(slider)
     }
     
     @IBAction func changeSlider(_ sender: UISlider) {

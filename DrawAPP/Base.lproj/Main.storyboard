@@ -120,6 +120,9 @@
                                     <segment title="菱形"/>
                                     <segment title="長方形"/>
                                 </segments>
+                                <connections>
+                                    <action selector="selectSegmented:" destination="9si-j5-ER8" eventType="valueChanged" id="23T-El-4kk"/>
+                                </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="6lD-u2-JS9">
                                 <rect key="frame" x="18" y="176" width="307" height="30"/>
@@ -151,6 +154,7 @@
                     <connections>
                         <outlet property="heartLabel" destination="JUH-Kg-Un0" id="HN9-ut-YDf"/>
                         <outlet property="shapeSegmented" destination="Tru-AE-IKE" id="Uks-0l-eUB"/>
+                        <outlet property="slider" destination="6lD-u2-JS9" id="YPN-5E-6x0"/>
                         <outlet property="valueLabel" destination="icl-lK-SZc" id="z7J-Tl-bt9"/>
                     </connections>
                 </viewController>
